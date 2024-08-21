@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP</title>
+</head>
+<body>
+    <h1>Programación Orientada a Objetos</h1>
+    <br>
+    <h2>¿Que es la POO?</h2>
+    <p>Es un paradigma de programación que utiliza "objetos" para representar datos y usar métodos que operen sobre esos datos.</p>
+    <br>
+    <h2>¿Que es la herencia?</h2>
+    <p>La herencia es una forma de utilizar clases existentes y utilizarlas para crear nuevas clases. Permite heredar tanto atributos como métodos de la clase,
+        ya en la nueva permite añadir mas métodos o atributos e incluso modificar los ya existentes.
+    </p>
+    <ol>
+        <li>Reutilización de Código: Permite reutilizar el código de la clase base en la subclase, lo que evita la duplicación de código y facilita la extensión de la funcionalidad.</li>
+        <li>Extensibilidad: Las subclases pueden ampliar la funcionalidad de las clases base añadiendo nuevos métodos o atributos específicos. También pueden sobreescribir métodos heredados para cambiar su comportamiento.</li>
+        <li>Jerarquía de Clases: La herencia establece una jerarquía de clases que refleja relaciones "es un" entre las clases. Por ejemplo, una Perro puede ser una subclase de Animal, indicando que un perro es un tipo de animal.</li>
+    </ol>
+    <br>
+    <h2>¿Que es el polimorfismo?</h2>
+    <p>Permite que una unica interfaz se pueda comportar de diferentes maneras segun en el objeto que sea invocado. lo que significa que un metodo al ser
+        utilizado en diferentes objetos puede comportarse de diferentes maneras según su pripia implementación.
+    </p>
+    <br>
+    <ol>
+        <li>Sobrecarga de Métodos: Permite definir múltiples métodos con el mismo nombre pero con diferentes parámetros en una misma clase. Por ejemplo, un método dibujar() puede tener versiones que acepten diferentes tipos de argumentos.</li>
+        <li>Sobrescritura de Métodos: En las subclases, se pueden redefinir métodos heredados para que se comporten de manera diferente. Esto se hace a través de la sobrescritura, donde el método en la subclase tiene una implementación específica.</li>
+        <li>Interfaz Común: Permite usar una interfaz común para diferentes tipos de objetos. Por ejemplo, se puede definir una interfaz Forma con un método dibujar(), y diferentes clases como Círculo y Cuadrado pueden implementar esta interfaz con sus propias versiones del método dibujar().</li>
+    </ol>
+    <h2>¿Que es la abstracción?</h2>
+    <p>Consiste en simplificar el diseño del software modelando solo las características que deseen ser relevantes del objeto y ocultar los detalles complejos.
+        Con uso de clases abstractas en interfaces, se puede lograr definir una estructura de clases sin especificar detalles de implementación.
+    </p>
+    <ol>
+        <li>Clases Abstractas: Son clases que no pueden ser instanciadas directamente y que pueden contener métodos abstractos (sin implementación). Las clases derivadas deben implementar estos métodos. Las clases abstractas proporcionan una estructura base que las subclases deben completar.</li>
+        <li>Interfaces: Definen un contrato que las clases deben seguir, especificando métodos que deben ser implementados. Las interfaces no contienen implementación, solo la firma de los métodos.</li>
+        <li>Modelado de Conceptos: La abstracción permite modelar conceptos del mundo real en términos de clases y objetos, centrándose en las propiedades y comportamientos relevantes para el problema que se está resolviendo.</li>
+    </ol>
+    <br>
+    <h2>¿Que es el encapsulamiento?</h2>
+    <p>Sigue un principio de ocultar detalles internos del objeto y solo revelar lo necesario. Para lograr este proceso se utlizan modificadores de 
+        acceso que permiten que sólo ciertas partes del código puedan interactuar con datos internos del objeto, protegiendo el estado inteno del objeto a modificaciones no autorizadas.
+    </p>
+    <ol>
+        <li>Control de Acceso: Se utilizan modificadores de acceso (como private, protected y public en muchos lenguajes de programación) para restringir el acceso a los datos y métodos internos. Por ejemplo, los atributos de una clase pueden ser private para que solo los métodos dentro de la clase puedan acceder a ellos.</li>
+        <li>Interfaces Públicas: La clase proporciona métodos públicos (también conocidos como getters y setters) para interactuar con los datos internos. Estos métodos permiten controlar cómo se accede y modifica la información, manteniendo la integridad del objeto.</li>
+        <li>Modularidad: El encapsulamiento promueve la modularidad al separar la implementación interna de la interfaz pública. Esto facilita el mantenimiento y la actualización del código sin afectar a otras partes del sistema.</li>
+    </ol>
+</body>
+</html>
+
+
+<!--
+3. **Encapsulamiento**: Es el principio de ocultar los detalles internos del objeto y exponer sólo lo necesario. 
+Esto se logra mediante modificadores de acceso que permiten que sólo ciertas partes del código puedan interactuar con los datos internos del objeto. 
+Ayuda a proteger el estado interno del objeto de modificaciones no autorizadas.
+
+4. **Herencia**: Permite crear nuevas clases basadas en clases existentes. La nueva clase hereda atributos y métodos de la clase base y puede añadir nuevos o modificar los existentes. 
+Por ejemplo, una clase `Vehículo` podría ser la base de una clase `Coche`, que hereda propiedades y métodos de `Vehículo` y añade sus propios detalles específicos.
+
+5. **Polimorfismo**: Permite que una única interfaz (método) se comporte de diferentes maneras según el objeto que la invoque. 
+Esto significa que se puede utilizar el mismo método en diferentes objetos y cada uno puede comportarse de manera diferente según su propia implementación.
+
+6. **Abstracción**: Consiste en simplificar el diseño del software al modelar solo las características relevantes del objeto y ocultar los detalles complejos. 
+A través de clases abstractas e interfaces, se puede definir la estructura de las clases sin especificar detalles de implementación.
+
+La POO es muy popular porque facilita la creación de software modular, reutilizable y fácil de mantener. 
+Permite a los desarrolladores pensar en términos de objetos del mundo real, lo que puede hacer que el diseño y el mantenimiento del software sean más intuitivos.-->
